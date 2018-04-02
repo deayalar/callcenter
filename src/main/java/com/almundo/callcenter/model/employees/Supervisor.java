@@ -20,6 +20,7 @@ public class Supervisor extends AbstractEmployee {
             throw new IllegalStateException("Interrupted Call", e);
         }finally {
             this.busy = false;
+            dispatchable.setAttended(true);
             logger.info(MessageFormat.format("Supervisor {0} is free", this.id));
         }
     }

@@ -13,6 +13,7 @@ public class Call implements Dispatchable{
     private int duration;
     private Employee employeeOnCharge;
     private int id;
+    private boolean attended;
 
     public Call(int id) {
         this.id = id;
@@ -30,8 +31,12 @@ public class Call implements Dispatchable{
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public boolean isAttended() {
+        return attended;
+    }
+
+    public void setAttended(boolean attended) {
+        this.attended = attended;
     }
 
     public void assign(Employee employeeOnCharge) {

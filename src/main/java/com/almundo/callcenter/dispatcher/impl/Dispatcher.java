@@ -58,9 +58,7 @@ public class Dispatcher {
     }
 
     public void receiveCalls(List<Dispatchable> calls, ConcurrentMap<String, ConcurrentMap<Integer, Employee>> staff) throws InterruptedException {
-        if(executorService == null) {
-            executorService = Executors.newFixedThreadPool(Constants.DEFAULT_CAPACITY);
-        }
+        executorService = Executors.newFixedThreadPool(Constants.DEFAULT_CAPACITY);
         for(Dispatchable call: calls) {
             executorService.execute(() -> dispatchCall(call, staff));
         }

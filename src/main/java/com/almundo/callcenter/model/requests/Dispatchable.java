@@ -11,4 +11,8 @@ public interface Dispatchable {
      void assign(Employee employeeOnCharge);
 
      int getId();
+
+     boolean isAttended();
+
+     void setAttended(boolean attended);
 }

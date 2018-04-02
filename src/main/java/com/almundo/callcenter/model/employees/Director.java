@@ -19,6 +19,7 @@ public class Director extends AbstractEmployee {
             throw new IllegalStateException("Interrupted Call", e);
         }finally {
             this.busy = false;
+            dispatchable.setAttended(true);
             logger.info(MessageFormat.format("Director {0} is free", this.id));
         }
     }
