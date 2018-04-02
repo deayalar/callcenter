@@ -4,7 +4,7 @@ To run this exercise please execute `mvn clean install`, you will see the unit t
 This project fullfills the requirements described here [backend test](https://drive.google.com/file/d/0BxHwiBJ3YfxVeWcwcWhBT0l4dDFQaW1iLXpYTloyeGRzX3JV/view?usp=sharing).
 
 This solution is documented in:
- [Class Diagram](https://drive.google.com/file/d/1OqoMVYxSYiYgt6vSbGL_wu_A1vLADc2V/view?usp=sharing).
+ [Class Diagram](https://raw.githubusercontent.com/deayalar/callcenter/master/class%20diagram.png).
 
 Solution to extras
 1. When there are no available employees - The calls are assigned to the next available employee, there is no a queue but the dipatcher is still asking for the next available employee to assign the call,
